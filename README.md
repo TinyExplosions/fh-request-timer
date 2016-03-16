@@ -22,7 +22,7 @@ Configuration
 To remove the `x-fh-timer` from the response, pass the option `{addHeader:false}`
 when calling the middleware:
 
-```
+``` javascript
 // include timer middleware
 app.use(reqTimer({addHeader: false}));
 ```
