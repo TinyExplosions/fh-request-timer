@@ -1,9 +1,5 @@
-var should = require('chai').should(),
-    expect = require('chai').expect,
-    assert = require('assert'),
-    supertest = require('supertest'),
+var supertest = require('supertest'),
     api = supertest('http://localhost:8052');
-
 
 describe('fh-request-timer', function() {
 

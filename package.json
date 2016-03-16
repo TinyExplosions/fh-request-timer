@@ -27,9 +27,8 @@
     "on-headers": "~1.0.1"
   },
   "devDependencies": {
-    "chai": "^3.5.0",
-    "express": "^4.13.4",
-    "mocha": "^2.4.5",
-    "supertest": "^1.2.0"
+    "express": "~4.13.4",
+    "mocha": "~2.4.5",
+    "supertest": "~1.2.0"
   }
 }
