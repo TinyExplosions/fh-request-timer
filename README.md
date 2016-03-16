@@ -2,7 +2,7 @@ fh-request-timer
 ========================
 
 A simple request timer middleware for express apps that logs request time to the
-Red Hat Mobile Application Platform, as well as adding an `x-fh-timer` header to
+Red Hat Mobile Application Platform, as well as adding an optional `x-fh-timer` header to
 each response.
 
 Implementation
@@ -13,8 +13,20 @@ Implementation
 var reqTimer = require('fh-request-timer');
 
 // include timer middleware
-app.use(reqTimer);
+app.use(reqTimer());
 ```
+
+Configuration
+--------------
+
+To remove the `x-fh-timer` from the response, pass the option `{addHeader:false}`
+when calling the middleware:
+
+```
+// include timer middleware
+app.use(reqTimer({addHeader: false}));
+```
+
 
 Run Unit Tests
 --------------

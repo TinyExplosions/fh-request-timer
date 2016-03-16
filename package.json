@@ -1,6 +1,6 @@
 {
   "name": "fh-request-timer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Express middleware to add a timer to all requests, sending the result to RHMAP stats and optionally adding the time taken as a response header",
   "main": "index.js",
   "scripts": {

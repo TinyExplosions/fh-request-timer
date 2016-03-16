@@ -5,18 +5,20 @@ var express = require('express'),
     app = express();
 
 before(function(next) {
-    app.use(timer);
-    app.get('/test', function testEndpoint(req,res){
-      console.log("I am a test endpoint that will return a response soon");
-      setTimeout(function delayedresponse(){
-        res.send("hello");
-      });
-    });
+    app.get('/hasHeader', timer(), testEndpoint);
+    app.get('/noHeader', timer({ addHeader: false }), testEndpoint);
+    app.get('/explicitHeader', timer({ addHeader: true }), testEndpoint);
     server = app.listen(port, function serverStartup() {
         console.log("Server Started on port", port);
         next();
     });
 });
+
+function testEndpoint(req, res) {
+    setTimeout(function delayedresponse() {
+        res.send("hello");
+    });
+}
 
 after(function() {
     if (server) {
