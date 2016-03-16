@@ -1,0 +1,25 @@
+{
+  "name": "fh-request-timer",
+  "version": "1.0.0",
+  "description": "Express middleware to add a timer to all requests, sending the result to RHMAP stats and optionally adding the time taken as a response header",
+  "main": "index.js",
+  "scripts": {
+    "test": "grunt mochaTest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TinyExplosions/fh-request-timer.git"
+  },
+  "keywords": [
+    "express",
+    "RHMAP",
+    "request",
+    "timer"
+  ],
+  "author": "Al Graham",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TinyExplosions/fh-request-timer/issues"
+  },
+  "homepage": "https://github.com/TinyExplosions/fh-request-timer#readme"
+}
