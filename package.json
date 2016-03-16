@@ -4,7 +4,7 @@
   "description": "Express middleware to add a timer to all requests, sending the result to RHMAP stats and optionally adding the time taken as a response header",
   "main": "index.js",
   "scripts": {
-    "test": "grunt mochaTest"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -28,6 +28,8 @@
   },
   "devDependencies": {
     "chai": "^3.5.0",
-    "mocha": "^2.4.5"
+    "express": "^4.13.4",
+    "mocha": "^2.4.5",
+    "supertest": "^1.2.0"
   }
 }
